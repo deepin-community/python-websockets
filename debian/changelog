@@ -1,0 +1,118 @@
+python-websockets (9.1-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+  [ Piotr Ożarowski ]
+  * New upstream release
+    - fixes CVE-2021-33880 (closes: 989561)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 29 Aug 2021 20:13:45 +0200
+
+python-websockets (8.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+  * d/control: Remove ancient X-Python3-Version field.
+
+  [ Piotr Ożarowski ]
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 31 Dec 2019 18:02:56 +0100
+
+python-websockets (7.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add bcep file to ease upgrades from Python 3.5/3.6 (for py35 and py36
+    submodules)
+  * Standards-Version bumped to 4.3.0 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 30 Dec 2018 20:28:58 +0100
+
+python-websockets (6.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Matthias Klose ]
+  * New upstream release.
+    + The new release is compatible with Python 3.7.  Closes: #904650
+
+  [ Mattia Rizzolo ]
+  * Bump Standards-Version to 4.2.1.
+    + Set Rules-Requires-Root:no.
+  * Bump debhelper compat level to 11.
+  * Set an explicit Testsuite:autopkgtest-pkg-python.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Wed, 26 Sep 2018 12:02:18 +0200
+
+python-websockets (4.0.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+
+  [ Piotr Ożarowski ]
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 16 May 2018 14:20:02 +0200
+
+python-websockets (3.4-1) unstable; urgency=medium
+
+  * New upstream release
+    - setup.py's encoding patch removed (fixed upstream)
+  * Standards-Version bumped to 4.1.1 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 29 Sep 2017 12:02:33 +0200
+
+python-websockets (3.3-1) unstable; urgency=medium
+
+  * New upstream release
+    - fixes tests on Python 3.5.2, patch removed
+  * Add a patch to correctly recognize README.rst's encoding while opening it
+    in setup.py
+  * Standards-Version bumped to 4.0.0 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 30 Jun 2017 14:45:58 +0200
+
+python-websockets (3.2-2) unstable; urgency=medium
+
+  * set WEBSOCKETS_TESTS_TIMEOUT_FACTOR to 100 to avoid FTBFS on slower
+    buildd (closes: 854335)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 14 Mar 2017 13:21:33 +0100
+
+python-websockets (3.2-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Piotr Ożarowski ]
+  * New upstream release
+  * Cherry pick github's pull 131 to fix tests (closes: 828901, 829726)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 05 Nov 2016 22:12:07 +0100
+
+python-websockets (3.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Minimum Python3 version bumped to 3.5
+    (note to backporters: remove websockets/py35_client.py if you want this
+     module for 3.3 or 3.4)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 27 Dec 2015 10:24:29 +0100
+
+python-websockets (2.6-1) unstable; urgency=low
+
+  * Initial release (closes: #798397)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 08 Sep 2015 21:03:37 +0200

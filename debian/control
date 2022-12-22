@@ -1,0 +1,26 @@
+Source: python-websockets
+Section: python
+Priority: optional
+Maintainer: Piotr Ożarowski <piotr@debian.org>
+Uploaders: Debian Python Team <team+python@tracker.debian.org>
+Build-Depends: debhelper-compat (= 12), dh-python,
+               python3-all,
+               python3-setuptools,
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-python
+Homepage: https://github.com/aaugustin/websockets
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-websockets.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-websockets
+
+Package: python3-websockets
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends},
+Description: implementation of the WebSocket Protocol (RFC 6455)
+ websockets is a library for developing WebSocket servers and clients in
+ Python. It implements RFC 6455 with a focus on correctness and simplicity.
+ It passes the Autobahn Testsuite.
+ .
+ Built on top of Python's asynchronous I/O support introduced in PEP 3156,
+ it provides an API based on coroutines, making it easy to write highly
+ concurrent applications.

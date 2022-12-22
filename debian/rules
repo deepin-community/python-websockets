@@ -1,0 +1,12 @@
+#! /usr/bin/make -f
+
+# extend timeout on slow buildd to fix FTBFS
+# see https://github.com/aaugustin/websockets/issues/163
+export WEBSOCKETS_TESTS_TIMEOUT_FACTOR=100
+
+export PYBUILD_NAME=websockets
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_test:
+	http_proxy= https_proxy= dh_auto_test
